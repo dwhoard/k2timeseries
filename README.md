@@ -18,3 +18,5 @@ The data processing and analysis steps are described in more detail in the *k2ti
 - Reporting of procedures and results (scientific/technical writing and documentation)
 
 **Sample Data Visualization:**
+
+![Cumultaive probability distribution for determining the periodogram falase alarm probability confidence levels](sample_output/212218649_sap_04_fap_cumulative_trials_100000.png "FAP confidence levels")
