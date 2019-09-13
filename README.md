@@ -1,6 +1,7 @@
 # K2 Space Mission Time Series Analysis of the Variable Asynchronous Polar SDSS J084617.12+245344.1
 
-## D. W. Hoard et al., 2019, in progress (a journal paper discussing these results is in preparation)
+## D. W. Hoard et al., 2019, in progress
+### (a journal paper discussing these results is in preparation)
 
 **Summary:**
 Processing and analysis of a combined data set containing more than 3800 multivariate (n>10) points for a single target drawn primarily from the NASA K2 mission database.
