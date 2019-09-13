@@ -1,6 +1,6 @@
 # K2 Space Mission Time Series Analysis of the Variable Asynchronous Polar SDSS J084617.12+245344.1
 
-D. W. Hoard et al., 2019, in progress
+D. W. Hoard et al., 2019, in progress (a journal paper discussing these results is in preparation)
 
 **Summary:**
 Processing and analysis of a combined data set containing more than 3800 multivariate (n>10) points for a single target drawn primarily from the NASA K2 mission database.
@@ -20,3 +20,5 @@ The data processing and analysis steps are described in more detail in the *k2ti
 **Sample Data Visualization:**
 
 ![Cumultaive probability distribution for determining the periodogram falase alarm probability confidence levels](sample_output/212218649_sap_04_fap_cumulative_trials_100000.png "FAP confidence levels")
+
+Cumulative distribution curve to assess the false alarm probability (FAP) of signal peaks in the periodogram. The fiducial lines show the minimum peak heights corresponding to confidence levels of (left to right) 50%, 68.27% (1-sigma), 90%, 95.45% (2-sigma), and 99.73% (3-sigma). The FAP distribution was constructed by performing a Monte Carlo simulation with 100,000 trials; in each trial, the input data amplitudes (Y) were randomly redistributed onto the time (X) values before recalculating the periodogram.
