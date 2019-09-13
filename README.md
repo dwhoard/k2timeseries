@@ -1,10 +1,9 @@
 # K2 Space Mission Time Series Analysis of the Variable Asynchronous Polar SDSS J084617.12+245344.1
 
 ## D. W. Hoard et al., 2019, in progress
-### (a journal paper discussing these results is in preparation)
 
 **Summary:**
-Processing and analysis of a combined data set containing more than 3800 multivariate (n>10) points for a single target drawn primarily from the NASA K2 mission database.
+Processing and analysis of a combined data set containing more than 3800 multivariate (n>10) points for a single target drawn primarily from the NASA K2 mission database. A journal paper discussing these results is in preparation.
 
 **Description of the data:**
 The data set is a time series of photometric brightness measurements of a variable star (a semi-detached, interacting binary) obtained at a cadence of aproximately 1 measurement every 30 minutes, continuously for 79.5 consecutive days. Each measurement produced a 7-dimensional data point comprised of: time, brightness and associated uncertainty, X & Y position on the detector, and two quality assessments. Pre-processing of the data deconvolved the brightness measurement into three additional components: the time-variable flux, the position-dependent flux, and a flux residual. 
