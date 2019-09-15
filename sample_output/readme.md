@@ -1,10 +1,10 @@
 # Sample Output Data Visualization Files for k2timeseries
 		
 ### 212218649_sap_02_LSperiodogram.png
-Lomb-Scargle periodogram of the sample input data provided in the k2timeseries repository
+Lomb-Scargle periodogram of the sample input data provided in the k2timeseries repository.
 
 ### 212218649_sap_03_bootstrap_max_npgram_trials_100000.txt
-Results of a Monte Carlo simulation with N=100,000 trials. In Each trial, the amplitude data were randomly scrambled relative to the input time data and a periodogram was recalculated. This output file lists the height of the tallest peak in the periodogram from each trial. The distribution of peak heights can be used to estimate the false alarm probability confidence levels for the original periodogram.
+Results of a Monte Carlo simulation with N=100,000 trials. In each trial, the amplitude data were randomly scrambled relative to the input time data and a periodogram was recalculated. This output file lists the height of the tallest peak in the periodogram from each trial. The distribution of peak heights can be used to estimate the false alarm probability confidence levels for the original periodogram.
 
 ### 212218649_sap_04_fap_cumulative_trials_100000.png
 Cumulative distribution curve to assess the false alarm probability (FAP) of signal peaks in the periodogram. The fiducial lines show the minimum peak heights corresponding to confidence levels of (left to right) 50%, 68.27% (1-sigma), 90%, 95.45% (2-sigma), and 99.73% (3-sigma). The FAP distribution was constructed by performing a Monte Carlo simulation with 100,000 trials; in each trial, the input data amplitudes (Y) were randomly redistributed onto the time (X) values before recalculating the periodogram.
