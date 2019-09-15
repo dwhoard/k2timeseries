@@ -1,7 +1,7 @@
 # Sample Output Data Visualization Files for k2timeseries
 		
 ### 212218649_sap_02_LSperiodogram.png
-Lomb-Scargle periodogram of the sample input data provided in the k2timesseries repository
+Lomb-Scargle periodogram of the sample input data provided in the k2timeseries repository
 
 ### 212218649_sap_03_bootstrap_max_npgram_trials_100000.txt
 Results of a Monte Carlo simulation with N=100,000 trials. In Each trial, the amplitude data were randomly scrambled relative to the input time data and a periodogram was recalculated. This output file lists the height of the tallest peak in the periodogram from each trial. The distribution of peak heights can be used to estimate the false alarm probability confidence levels for the original periodogram.
