@@ -1,0 +1,35 @@
+2019-12-27 00:15:48
+### PARAMETERS ###
+[user] target index (tidx) = 3
+[user] target ID (tname[tidx]) = 212222400
+[user] K2 campaign ID (k2camid) = 16
+[user] data type (dtype) = sap
+[user] output file path (SAVEPATH) = ./output/
+[user] debug comments level (LDEBUG) = 1
+[user] K2 start time (t0) = 2454833.0
+name string (name_string) = 212222400_sap 
+
+2019-12-27 00:15:49
+### READ AND CLEAN DATA ###
+*** Finished loading and cleaning input data 
+
+2019-12-27 00:15:50
+### INPUT DATA VISUALIZATION ###
+[user] fraction of total range for expanding y-axis endpoints when plotting (rangefac): 0.05
+[user] using K2 campaign splits? (USE_PYRANGE_REF) = True
+Reference y-axis ranges for panels 0-5 (pyrange_ref):
+Panel 0: pyrange = [18.550970720633437, 20.18986589095351]
+Panel 1: pyrange = [-54.161889734486195, 119.91825364666558]
+Panel 2: pyrange = [-54.161889734486195, 119.91825364666558]
+Panel 3: pyrange = [-15.289839921753096, 395.244983989217]
+Panel 4: pyrange = [6.8446830749511705, 478.94497451782223]
+Panel 5: pyrange = [-1.8630940586328504, 0.6832127839326857]
+Plotted y-axis ranges for panels 0-5 (pyrange ):
+Panel 0: pyrange = [19.371742261838843, 21.010637432158916]
+Panel 1: pyrange = [-83.02682346085275, 91.05331992029902]
+Panel 2: pyrange = [-83.02682346085275, 91.05331992029902]
+Panel 3: pyrange = [-134.92241050979726, 275.61241340117283]
+Panel 4: pyrange = [-112.39951572418208, 359.700775718689]
+Panel 5: pyrange = [-1.8576636880636213, 0.6886431545019148]
+*** Finished visualizing the raw and processed input data 
+

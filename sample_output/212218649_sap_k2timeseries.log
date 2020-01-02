@@ -1,0 +1,274 @@
+2019-12-26 23:59:14
+### PARAMETERS ###
+[user] target index (tidx) = 0
+[user] target ID (tname[tidx]) = 212218649
+[user] K2 campaign ID (k2camid) = 16
+[user] data type (dtype) = sap
+[user] output file path (SAVEPATH) = ./output/
+[user] debug comments level (LDEBUG) = 1
+[user] K2 start time (t0) = 2454833.0
+name string (name_string) = 212218649_sap 
+
+2019-12-26 23:59:17
+### READ AND CLEAN DATA ###
+*** Finished loading and cleaning input data 
+
+2019-12-26 23:59:19
+### INPUT DATA VISUALIZATION ###
+[user] fraction of total range for expanding y-axis endpoints when plotting (rangefac): 0.05
+[user] using K2 campaign splits? (USE_PYRANGE_REF) = True
+Panel 0: pyrange = [18.550970720633437, 20.18986589095351]
+Panel 1: pyrange = [-54.161889734486195, 119.91825364666558]
+Panel 2: pyrange = [-54.161889734486195, 119.91825364666558]
+Panel 3: pyrange = [-15.289839921753096, 395.244983989217]
+Panel 4: pyrange = [6.8446830749511705, 478.94497451782223]
+Panel 5: pyrange = [-1.8630940586328504, 0.6832127839326857]
+*** Finished visualizing the raw and processed input data 
+
+2019-12-26 23:59:27
+### PERIODOGRAM ###
+[user] override automatic calculation of maximum frequency? (user_fmax) = -1
+number of points in time series (N) = 3572
+mean of the cleaned time series (varflux_mean) = 192.740571529694
+standard deviation of the cleaned time series (varflux_std) = 42.356025963476775
+mean, variance of normalized time series (expect 0, 1): 0.0 1.0
+min, max, mean of successive time differences: 0.020434653386473656 0.14304954698309302 0.022267168982825776
+total length of time series (T): 79.51422812230885
+minimum valid frequency, period for periodogram (fmin): 0.01257636555890097 79.51422812230885
+maximum valid frequency, period for periodogram (fmax): 24.46823983473905 0.04086930677294731
+number of frequencies in periodogram (Nf): 9727
+*** Finished setting up for Lomb-Scargle periodogram 
+
+2019-12-26 23:59:30
+*** Finished calculating L-S periodogram 0h 0m 1s 
+
+2019-12-26 23:59:31
+### BOOTSTRAPPING THE FAP ###
+[user] run the Monte Carlo simulation? (do_bootstrap): False
+[user] desired false positive rate (fap_desired): 0.0001
+[user] number of processor cores used (nproc): 6
+number of Monte Carlo trials to reach fap_desired (Np): 100000
+*** Skipping bootstrap simulation - read file of previous bootstrap results instead 
+
+2019-12-26 23:59:33
+### FAP CONFIDENCE LEVELS ###
+FAP bootstrap simulation results file: ./output/212218649_sap_03_bootstrap_max_npgram_trials_100000.txt
+minimum, maximum peak height in bootstrap simulation: 0.0034244541992739224 0.011902609199125702
+[user] minimum, maximum peak height bins in histogram (minbin, maxbin) = 0.002 0.015
+number of points in FAP simulation (Np): 100000
+[user] number of histogram bins (nhbins) = 1000
+[user] desired FAP confidence levels to evaluate (fap_levels) = [0.9973, 0.9545, 0.9, 0.6827, 0.5]
+    Fiducial FAP confidence levels:
+        0.9973 = 3-sigma
+        0.9545 = 2-sigma
+        0.90   = 90%
+        0.6827 = 1-sigma
+        0.50   = 50%
+Peak height limits for FAP confidence levels of:
+['99.73% = 0.008175', '95.45% = 0.006576', '90.00% = 0.006108', '68.27% = 0.005367', '50.00% = 0.005016']
+*** Finished determining FAP levels from bootstrap simulation results 
+
+2019-12-26 23:59:35
+### PERIODOGRAM PEAKS ###
+[user] height threshold for finding peaks (phlim): 0.005016
+       height   frequency       HWHM      period        unc  FAPconf
+0  0.01181613  0.02671735 0.00467877 37.42886488 6.55457988  >99.73%
+1  0.00746994  0.14773538 0.00534242  6.76885947 0.24477590  >95.45%
+2  0.11755853  0.29878354 0.00601611  3.34690464 0.06739104  >99.73%
+3  0.00667536  0.33232596 0.00547439  3.00909386 0.04956868  >95.45%
+4  0.00521448  0.45472652 0.00863573  2.19912398 0.04176363  >50.00%
+5  0.00613245  0.59769429 0.00633536  1.67309612 0.01773426  >68.27%
+6  0.01925600  5.17154488 0.00580362  0.19336582 0.00021700  >99.73%
+7  0.00691876  5.30342074 0.00320041  0.18855755 0.00011379  >90.00%
+8  0.15607239  5.32214643 0.00544306  0.18789412 0.00019216  >99.73%
+9  0.00652565  5.34032426 0.00300837  0.18725455 0.00010549  >90.00%
+10 0.00784493  5.44026188 0.00411300  0.18381468 0.00013897  >95.45%
+11 0.20262491  5.47042019 0.00562224  0.18280131 0.00018787  >99.73%
+12 0.00993572  5.48947552 0.00334350  0.18216677 0.00011095  >99.73%
+13 0.00666763  5.61958205 0.00550708  0.17794918 0.00017439  >90.00%
+14 0.01136692  5.76871480 0.00574802  0.17334884 0.00017273  >99.73%
+15 0.03321617 10.64379336 0.00550803  0.09395147 0.00004862  >99.73%
+16 0.12128156 10.79246521 0.00553412  0.09265724 0.00004751  >99.73%
+17 0.04927941 10.94199759 0.00557075  0.09139099 0.00004653  >99.73%
+18 0.01529296 16.26446705 0.00554892  0.06148372 0.00002098  >99.73%
+19 0.01265185 21.73406322 0.00562623  0.04601072 0.00001191  >99.73%
+*** Finished identification and gaussian fits of periodogram peaks 
+
+2019-12-26 23:59:39
+### FREQUENCY RELATIONSHIPS ###
+[user] spin frequency index [i]: 11
+[user] orbital frequency index [j]: 8
+[user] sigma-difference limit for identifying a potential frequency relationship [siglim]: 1.0
+spin frequency[11]  [s] = 5.47042019 +/- 0.00562224
+orbital frequency[8]  [o] = 5.32214643 +/- 0.00544306
+
+          2o =  10.64429286 +/- 0.01088612
+ frq_obs[15] =  10.64379336 +/- 0.00550803
+        diff = -0.00049950 +/- 0.01220025 (-0.04 sigma; -0.00% +/- 0.11%)
+
+          2s =  10.94084038 +/- 0.01124448
+ frq_obs[17] =  10.94199759 +/- 0.00557075
+        diff =  0.00115721 +/- 0.01254877 (0.09 sigma; 0.01% +/- 0.11%)
+
+         s-o =  0.14827376 +/- 0.00782537
+  frq_obs[1] =  0.14773538 +/- 0.00534242
+        diff = -0.00053838 +/- 0.00947512 (-0.06 sigma; -0.36% +/- 6.39%)
+
+      2(s-o) =  0.29654752 +/- 0.01565075
+  frq_obs[2] =  0.29878354 +/- 0.00601611
+        diff =  0.00223602 +/- 0.01676722 (0.13 sigma; 0.75% +/- 5.65%)
+
+      3(s-o) =  0.44482128 +/- 0.02347612
+  frq_obs[4] =  0.45472652 +/- 0.00863573
+        diff =  0.00990524 +/- 0.02501408 (0.40 sigma; 2.23% +/- 5.62%)
+
+      4(s-o) =  0.59309504 +/- 0.03130150
+  frq_obs[5] =  0.59769429 +/- 0.00633536
+        diff =  0.00459925 +/- 0.03193619 (0.14 sigma; 0.78% +/- 5.38%)
+
+      2s - o =  5.61869395 +/- 0.01249261
+ frq_obs[13] =  5.61958205 +/- 0.00550708
+        diff =  0.00088810 +/- 0.01365259 (0.07 sigma; 0.02% +/- 0.24%)
+
+     3s - 2o =  5.76696771 +/- 0.02007471
+ frq_obs[14] =  5.76871480 +/- 0.00574802
+        diff =  0.00174709 +/- 0.02088142 (0.08 sigma; 0.03% +/- 0.36%)
+
+     4s - 3o =  5.91524147 +/- 0.02779200
+***WARNING: No potential frequency relationship found within |sigma_diff| <= 1.0
+
+         s+o =  10.79256662 +/- 0.00782537
+ frq_obs[16] =  10.79246521 +/- 0.00553412
+        diff = -0.00010141 +/- 0.00958452 (-0.01 sigma; -0.00% +/- 0.09%)
+
+      2s + o =  16.26298681 +/- 0.01249261
+ frq_obs[18] =  16.26446705 +/- 0.00554892
+        diff =  0.00148024 +/- 0.01366952 (0.11 sigma; 0.01% +/- 0.08%)
+
+      3s + o =  21.73340700 +/- 0.01772324
+ frq_obs[19] =  21.73406322 +/- 0.00562623
+        diff =  0.00065622 +/- 0.01859483 (0.04 sigma; 0.00% +/- 0.09%)
+
+      2o - s =  5.17387267 +/- 0.01225223
+  frq_obs[6] =  5.17154488 +/- 0.00580362
+        diff = -0.00232779 +/- 0.01355726 (-0.17 sigma; -0.04% +/- 0.26%)
+
+     3o - 2s =  5.02559891 +/- 0.01982626
+***WARNING: No potential frequency relationship found within |sigma_diff| <= 1.0
+
+     4o - 3s =  4.87732515 +/- 0.02754118
+***WARNING: No potential frequency relationship found within |sigma_diff| <= 1.0
+
+ o - (s-o)/8 =  5.30361221 +/- 0.00553026
+  frq_obs[7] =  5.30342074 +/- 0.00320041
+        diff = -0.00019147 +/- 0.00638955 (-0.03 sigma; -0.00% +/- 0.12%)
+
+ o + (s-o)/8 =  5.34068065 +/- 0.00553026
+  frq_obs[9] =  5.34032426 +/- 0.00300837
+        diff = -0.00035639 +/- 0.00629555 (-0.06 sigma; -0.01% +/- 0.12%)
+
+ s - (s-o)/5 =  5.44076544 +/- 0.00583601
+ frq_obs[10] =  5.44026188 +/- 0.00411300
+        diff = -0.00050356 +/- 0.00713973 (-0.07 sigma; -0.01% +/- 0.13%)
+
+ s - (s-o)/8 =  5.45188597 +/- 0.00570670
+***WARNING: No potential frequency relationship found within |sigma_diff| <= 1.0
+
+ s + (s-o)/8 =  5.48895441 +/- 0.00570670
+ frq_obs[12] =  5.48947552 +/- 0.00334350
+        diff =  0.00052111 +/- 0.00661403 (0.08 sigma; 0.01% +/- 0.12%)
+
+        o/16 =  0.33263415 +/- 0.00034019
+  frq_obs[3] =  0.33232596 +/- 0.00547439
+        diff = -0.00030819 +/- 0.00548495 (-0.06 sigma; -0.09% +/- 1.65%)
+
+Unused frequencies:
+ frq_obs[0]  = 0.02671735  (period = 37.42886177)
+*** Finished identifying potential frequency relationships (for |sigma_diff| <= 1.0) 
+
+2019-12-26 23:59:43
+### PERIODOGRAM PEAKS VISUALIZATION ###
+('*** Finished plotting periodogram peaks (marker split at FAP level', '>90.00%)') 
+
+2019-12-26 23:59:45
+### PHASE CALCULATIONS ###
+[user] offset added to calculated phases (phi_offset): 0.0
+[user] time zeropoint for calculating phases [-1 to use first time] (phi_zeropoint): 2458095.488286425
+*** Finished calculating phases 
+
+2019-12-26 23:59:49
+### PHASE BINNING ###
+[user] step size for phase bins [1/dstep should be an integer] (dstep): 0.05
+half of a phase bin width (dshift): 0.025
+number of phase bins (nphibins): 20
+phase bins (pbins): [0.975, 0.025, 0.075, 0.125, 0.175, 0.225, 0.275, 0.325, 0.375, 0.425, 0.475, 0.525, 0.575, 0.625, 0.675, 0.725, 0.775, 0.825, 0.875, 0.925, 0.975]
+phase bin centers (pcbins): [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
+Processing phased period data 00 (period = 37.42886488)  0h 0m 0s
+Processing phased period data 01 (period = 6.76885947)  0h 0m 0s
+Processing phased period data 02 (period = 3.34690464)  0h 0m 0s
+Processing phased period data 03 (period = 3.00909386)  0h 0m 0s
+Processing phased period data 04 (period = 2.19912398)  0h 0m 0s
+Processing phased period data 05 (period = 1.67309612)  0h 0m 0s
+Processing phased period data 06 (period = 0.19336582)  0h 0m 0s
+Processing phased period data 07 (period = 0.18855755)  0h 0m 0s
+Processing phased period data 08 (period = 0.18789412)  0h 0m 1s
+Processing phased period data 09 (period = 0.18725455)  0h 0m 1s
+Processing phased period data 10 (period = 0.18381468)  0h 0m 2s
+Processing phased period data 11 (period = 0.18280131)  0h 0m 2s
+Processing phased period data 12 (period = 0.18216677)  0h 0m 2s
+Processing phased period data 13 (period = 0.17794918)  0h 0m 3s
+Processing phased period data 14 (period = 0.17334884)  0h 0m 3s
+Processing phased period data 15 (period = 0.09395147)  0h 0m 4s
+***WARNING: no data for phase cycle223
+Processing phased period data 16 (period = 0.09265724)  0h 0m 4s
+***WARNING: no data for phase cycle226
+***WARNING: no data for phase cycle252
+Processing phased period data 17 (period = 0.09139099)  0h 0m 5s
+***WARNING: no data for phase cycle210
+***WARNING: no data for phase cycle229
+Processing phased period data 18 (period = 0.06148372)  0h 0m 6s
+***WARNING: no data for phase cycle32
+***WARNING: no data for phase cycle47
+***WARNING: no data for phase cycle313
+***WARNING: no data for phase cycle341
+***WARNING: no data for phase cycle380
+***WARNING: no data for phase cycle445
+Processing phased period data 19 (period = 0.04601072)  0h 0m 7s
+***WARNING: no data for phase cycle16
+***WARNING: no data for phase cycle43
+***WARNING: no data for phase cycle63
+***WARNING: no data for phase cycle372
+***WARNING: no data for phase cycle418
+***WARNING: no data for phase cycle419
+***WARNING: no data for phase cycle455
+***WARNING: no data for phase cycle456
+***WARNING: no data for phase cycle508
+***WARNING: no data for phase cycle509
+***WARNING: no data for phase cycle595
+***WARNING: no data for phase cycle701
+***WARNING: no data for phase cycle717
+***WARNING: no data for phase cycle728
+***WARNING: no data for phase cycle1161
+***WARNING: no data for phase cycle1533
+*** Finished phase binning  0h 0m 8s 
+
+2019-12-27 00:00:05
+### ONE-DIMENSIONAL LIGHT CURVE(S) VISUALIZATION ###
+*** Finished plotting folded light curve(s) 
+
+2019-12-27 00:00:19
+### ONE-DIMENSIONAL LIGHT CURVE(S) VISUALIZATION ###
+*** Finished plotting folded light curve(s) 
+
+2019-12-27 00:00:30
+### TWO-DIMENSIONAL LIGHT CURVE VISUALIZATION ###
+*** Finished displaying 2-dimensional trailed light curves 
+
+2019-12-27 00:00:35
+### FOLDED TWO-DIMENSIONAL LIGHT CURVE VISUALIZATION ###
+*** Finished displaying folded 2-dimensional trailed light curves 
+
+2019-12-27 00:00:45
+### TWO-DIMENSIONAL LIGHT CURVE VISUALIZATION ###
+*** Finished displaying 2-dimensional trailed light curves 
+
