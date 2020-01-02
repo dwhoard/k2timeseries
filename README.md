@@ -1,6 +1,6 @@
 # K2 Space Mission Time Series Analysis of the Variable Asynchronous Polar SDSS J084617.12+245344.1
 
-## D. W. Hoard et al., 2019, in progress
+## D. W. Hoard et al., 2020, in progress
 
 **Summary:**
 
