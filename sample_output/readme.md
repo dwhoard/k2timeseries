@@ -18,8 +18,8 @@ Zoomed views of several regions of the periodogram, showing peaks that were auto
 ### 212218649_sap_06_lc_folded_3.png
 Multipanel plot showing the light curve folded on the orbit, spin, and beat periods found from the periodogram analysis.
 
-### 212218649_sap_07_lc_trailed_0.18789412.png
+### 212218649_sap_07_lc_trailed_0.18789411.png
 Two-dimensional trailed light curve of the input data. The horizontal axis shows the cycle phase folded on one of the periods found from the time series periodogram analysis, and binned into 10 phases bins. The data are repeated over two cycles. Th vertical axis shows the cycle count over the full 79.5-day span of the data. The panel on the left shows the raw data; empty phase bins are depicted in white (NaNs in the DataFrame structure). The middle panel shows the data in each phase bin smoothed upward in the cycles direction by a moving window with the smallest size that eliminates all empty phase bins. The right panel uses a larger moving window size to present a more smoothed version of the data.
 
-### 212218649_sap_08_lc_trailed_folded_0.18789412.png
+### 212218649_sap_08_lc_trailed_folded_0.18789411.png
 Two-dimensional trailed light curve of the input data, with the vertical axis (cycle count) folded over a specified number of cycles. The data are repested over two cycles in both the horizontal (cycle phase) and vertical directions.
