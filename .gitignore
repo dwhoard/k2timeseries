@@ -1,1 +1,4 @@
+*.swp
+.DS_Store
+.ipynb_checkpoints/
 cp.sh
